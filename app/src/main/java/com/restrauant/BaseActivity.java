@@ -106,6 +106,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         }).create();
+        dialog.show();
         return dialog;
     }
 }
