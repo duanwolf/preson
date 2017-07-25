@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.restrauant.ManageKindActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/title"
+            android:text="分类管理"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/manage_kind"
+        android:background="#fff"
+        android:textSize="@dimen/other_size"
+        android:textColor="#000"
+        android:text="分类管理"
+        android:drawableRight="@mipmap/next_gray"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/add_kind"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="添加分类"
+        android:drawableRight="@mipmap/next_gray"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/add_good"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="添加商品"
+        android:drawableRight="@mipmap/next_gray"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+
+</LinearLayout>

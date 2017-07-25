@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.restrauant.GetMoneyNextActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/title"
+            android:text="提现"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+        <TextView
+            android:layout_weight="3"
+            android:text="充值金额"
+            android:background="#fff"
+            android:textSize="@dimen/simple_size"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/money"
+            android:background="#fff"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+    <TextView
+        android:layout_weight="3"
+        android:text="充值方式"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+        <TextView
+            android:drawableRight="@mipmap/next_gray"
+            android:id="@+id/pay_way"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="中国民生银行（7029）"
+            android:textSize="@dimen/simple_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_coner"
+        android:text="确认"
+        android:textColor="#fff"
+        android:textSize="@dimen/simple_size" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="预订成功？"
+            android:layout_marginTop="20dp"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="11sp"
+            android:text="4月7日"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000"
+            android:text="180.00元"
+            android:textSize="22sp"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/column_height"
+            android:text="预订人：某某某"
+            android:textSize="16sp"
+            android:background="#fff"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/column_height"
+            android:text="联系方式：12345678901"
+            android:textSize="16sp"
+            android:background="#fff"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:text="查看详情"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:background="#fff"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:drawableRight="@mipmap/next_gray"/>
+</LinearLayout>

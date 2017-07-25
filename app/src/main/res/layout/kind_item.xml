@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/column_height"
+            android:gravity="center_vertical"
+            android:text="鳝鱼粉丝煲"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <RatingBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:theme="@style/yellowStar"
+            android:rating="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐描述说点啥" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/column_height"
+            android:text="￥36"
+            android:gravity="center_vertical"
+            android:textColor="@color/california"
+            android:textSize="@dimen/simple_size" />
+    </LinearLayout>
+</LinearLayout>

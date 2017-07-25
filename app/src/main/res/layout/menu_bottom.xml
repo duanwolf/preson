@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/manage_kind"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="分类管理"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+
+    <TextView
+        android:id="@+id/add_kind"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="添加分类"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+
+    <TextView
+        android:id="@+id/add_good"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="添加商品"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:textSize="@dimen/simple_size"
+        android:textColor="#000"
+        android:text="取消"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height" />
+
+</LinearLayout>

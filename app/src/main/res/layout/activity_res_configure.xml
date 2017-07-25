@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.restrauant.ResConfigureActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:id="@+id/title"
+            android:text="店铺认证"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="店铺名称"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:hint="请输入店铺名称"
+            android:textColorHint="#999" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="法人"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <EditText
+            android:id="@+id/p_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:hint="请输入法人信息"
+            android:textColorHint="#999" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="联系电话"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:hint="请输入联系电话"
+            android:textColorHint="#999" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="营业执照"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#fff"
+            android:hint="请输入营业执照编号"
+            android:textColorHint="#999" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/column_height"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="图片上传"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/pic"
+                android:src="@drawable/add_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_coner"
+        android:text="申请认证"
+        android:textColor="#fff"
+        android:textSize="@dimen/simple_size" />
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.restrauant.RatingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的评分"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="商家环境"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical">
+
+            <RatingBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:theme="@style/yellowStar"
+                android:rating="4" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="5.0分"
+            android:textSize="@dimen/item_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="服务态度"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4">
+
+            <RatingBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:theme="@style/yellowStar"
+                android:rating="4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="5.0分"
+            android:textSize="@dimen/item_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/column_height"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="其他"
+            android:textColor="#000"
+            android:textSize="@dimen/simple_size" />
+
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:theme="@style/yellowStar"            android:numStars="5"
+            android:rating="4" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="5.0分"
+            android:textSize="@dimen/item_text_size" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

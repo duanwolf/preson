@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.restrauant.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:titleTextColor="#fff"
+        toolbar:title="哈尔滨">
+        <!--<TextView-->
+            <!--android:layout_gravity="left"-->
+            <!--android:text="哈尔滨"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/column_height"
+            android:gravity="center"
+            android:text="百事利便利店（工大店）"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        toolbar:tabSelectedTextColor="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <!--<FrameLayout-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></FrameLayout>-->
+</LinearLayout>
