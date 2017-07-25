@@ -1,10 +1,13 @@
 package com.restrauant;
 
 import android.Manifest;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.telephony.TelephonyManager;
@@ -96,4 +99,13 @@ public abstract class BaseActivity extends AppCompatActivity {
 //            e.printStackTrace();
 //        }
 //    }
+    protected Dialog CreateMessageDialog(String message) {
+        Dialog dialog  = new AlertDialog.Builder(this).setTitle("Restrauant").setMessage(message).setNegativeButton("ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        }).create();
+        return dialog;
+    }
 }
