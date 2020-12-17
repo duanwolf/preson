@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
@@ -30,11 +31,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 //        pfs = getSharedPreferences(LoginActivity.INFO, MODE_PRIVATE);
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
-//                != PackageManager.PERMISSION_GRANTED) {
-//            // READ_PHONE_STATE permission has not been granted.
-//            requestPermission();
-//        }
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+                != PackageManager.PERMISSION_GRANTED) {
+            // READ_PHONE_STATE permission has not been granted.
+            requestPermission();
+        }
 //        tm = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
 //        mime = tm.getDeviceId();
 //        userid = getSharedPreferences(LoginActivity.INFO, MODE_PRIVATE).getString("userid", "");
